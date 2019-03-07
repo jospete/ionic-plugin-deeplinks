@@ -29,7 +29,7 @@ Thank you to the [Cordova Universal Links Plugin](https://github.com/nordnet/cor
 ```bash
 cordova plugin add ionic-plugin-deeplinks
 --variable URL_SCHEME=myapp --variable DEEPLINK_SCHEME=https --variable DEEPLINK_HOST=example.com
---variable ANDROID_PATH_PREFIX=/
+--variable ANDROID_PATH_PREFIX=/ --variable ANDROID_PATH_PATTERN='.*'
 ```
 
 Fill in the appropriate values as shown below:
