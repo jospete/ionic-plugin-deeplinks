@@ -22,6 +22,12 @@
       <preference name="ANDROID_4_PATH_PREFIX" default="/" />
       <preference name="ANDROID_5_PATH_PREFIX" default="/" />
 
+      <preference name="ANDROID_PATH_PATTERN" default=".*" />
+      <preference name="ANDROID_2_PATH_PATTERN" default=".*" />
+      <preference name="ANDROID_3_PATH_PATTERN" default=".*" />
+      <preference name="ANDROID_4_PATH_PATTERN" default=".*" />
+      <preference name="ANDROID_5_PATH_PATTERN" default=".*" />
+
       <preference name="DEEPLINK_2_SCHEME" default=" " />
       <preference name="DEEPLINK_2_HOST" default=" " />
       <preference name="DEEPLINK_3_SCHEME" default=" " />
@@ -54,11 +60,11 @@
           <action android:name="android.intent.action.VIEW" />
           <category android:name="android.intent.category.DEFAULT" />
           <category android:name="android.intent.category.BROWSABLE" />
-          <data android:scheme="$DEEPLINK_SCHEME" android:host="$DEEPLINK_HOST" android:pathPrefix="$ANDROID_PATH_PREFIX" />
-          <data android:scheme="$DEEPLINK_2_SCHEME" android:host="$DEEPLINK_2_HOST" android:pathPrefix="$ANDROID_2_PATH_PREFIX" />
-          <data android:scheme="$DEEPLINK_3_SCHEME" android:host="$DEEPLINK_3_HOST" android:pathPrefix="$ANDROID_3_PATH_PREFIX" />
-          <data android:scheme="$DEEPLINK_4_SCHEME" android:host="$DEEPLINK_4_HOST" android:pathPrefix="$ANDROID_4_PATH_PREFIX" />
-          <data android:scheme="$DEEPLINK_5_SCHEME" android:host="$DEEPLINK_5_HOST" android:pathPrefix="$ANDROID_5_PATH_PREFIX" />
+          <data android:scheme="$DEEPLINK_SCHEME" android:host="$DEEPLINK_HOST" android:pathPrefix="$ANDROID_PATH_PREFIX" android:pathPattern="$ANDROID_PATH_PATTERN" />
+          <data android:scheme="$DEEPLINK_2_SCHEME" android:host="$DEEPLINK_2_HOST" android:pathPrefix="$ANDROID_2_PATH_PREFIX" android:pathPattern="$ANDROID_2_PATH_PATTERN" />
+          <data android:scheme="$DEEPLINK_3_SCHEME" android:host="$DEEPLINK_3_HOST" android:pathPrefix="$ANDROID_3_PATH_PREFIX" android:pathPattern="$ANDROID_3_PATH_PATTERN" />
+          <data android:scheme="$DEEPLINK_4_SCHEME" android:host="$DEEPLINK_4_HOST" android:pathPrefix="$ANDROID_4_PATH_PREFIX" android:pathPattern="$ANDROID_4_PATH_PATTERN" />
+          <data android:scheme="$DEEPLINK_5_SCHEME" android:host="$DEEPLINK_5_HOST" android:pathPrefix="$ANDROID_5_PATH_PREFIX" android:pathPattern="$ANDROID_5_PATH_PATTERN" />
         </intent-filter>
       </config-file>
 
